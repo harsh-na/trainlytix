@@ -1,0 +1,122 @@
+{
+  "theme": "LIGHT",
+  "archetype": "Archetype 4 (Swiss & High-Contrast / Modern Corporate)",
+  "brand": {
+    "name": "Trainlytix",
+    "tone": "Professional, focused, authoritative yet approachable, organized"
+  },
+  "colors": {
+    "background": {
+      "page": "bg-slate-50",
+      "card": "bg-white",
+      "sidebar": "bg-slate-900"
+    },
+    "text": {
+      "primary": "text-slate-900",
+      "secondary": "text-slate-500",
+      "inverse": "text-white",
+      "sidebar_inactive": "text-slate-400"
+    },
+    "border": "border-slate-200",
+    "brand_accent": {
+      "primary": "bg-blue-600",
+      "hover": "bg-blue-700",
+      "sidebar_active": "bg-slate-800 border-blue-500"
+    },
+    "status": {
+      "completed": "text-emerald-700 bg-emerald-50 border-emerald-200",
+      "in_progress": "text-blue-700 bg-blue-50 border-blue-200",
+      "pending": "text-amber-700 bg-amber-50 border-amber-200"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": "font-outfit",
+      "body": "font-manrope"
+    },
+    "sizes": {
+      "h1": "text-3xl sm:text-4xl font-bold tracking-tight",
+      "h2": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h3": "text-lg font-medium",
+      "body": "text-sm text-slate-600",
+      "small": "text-xs font-medium uppercase tracking-wider"
+    }
+  },
+  "spacing_and_layout": {
+    "grid": "Control Room Grid Pattern (Dense, Functional)",
+    "container_padding": "p-6 md:p-8",
+    "card_padding": "p-6",
+    "gap": "gap-6",
+    "radius": "rounded-xl"
+  },
+  "surfaces": {
+    "cards": "bg-white border border-slate-100 shadow-sm",
+    "sidebar": "bg-slate-900 border-r border-slate-800"
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "stroke-2, crisp"
+  },
+  "components": {
+    "sidebar": "Fixed left, dark mode (bg-slate-900). Active item has light background (bg-slate-800) and left accent border (border-l-4 border-blue-500).",
+    "header": "Sticky top, white background, bottom border (border-b border-slate-200), glassmorphism (backdrop-blur-xl bg-white/80).",
+    "status_pill": "Rounded-full px-2.5 py-0.5 text-xs font-medium border.",
+    "progress_bar": "h-2 w-full bg-slate-100 rounded-full overflow-hidden, filled portion bg-blue-600.",
+    "charts": "Shadcn charts (Recharts). Line chart for performance trend, Radial bar for Attendance."
+  },
+  "interactions": {
+    "hover": "Subtle translate-y or shadow change on cards. Button hover darkens background. Explicit hover states on all interactables.",
+    "focus": "focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+    "animation": "Framer motion for page transitions and staggering list items."
+  },
+  "pages": {
+    "login": {
+      "layout": "Split screen. Left side: Abstract generated corporate image. Right side: Login form card.",
+      "components": "Shadcn Form, Input, Button. Custom branding."
+    },
+    "dashboard": {
+      "layout": "CSS Grid (grid-cols-1 md:grid-cols-3 lg:grid-cols-4).",
+      "widgets": [
+        "Welcome Card (col-span-full): Name, batch, phase.",
+        "Performance Snapshot (col-span-2): Line chart.",
+        "Attendance Ring (col-span-1): Radial chart.",
+        "Upcoming Sessions (col-span-1 row-span-2): List of items.",
+        "Pending Assignments (col-span-2): Table or List with status pills.",
+        "Recent Materials (col-span-full): Card grid of thumbnails."
+      ]
+    }
+  },
+  "image_urls": [
+    {
+      "category": "login_background",
+      "url": "https://static.prod-images.emergentagent.com/jobs/65494c6f-7277-4134-a328-1f949e850228/images/a4b8a41c0b6ab2372f80d42b5a2c83ff2d6f5b7e36182d8bc18b6dca152f8bdc.png",
+      "description": "Abstract corporate 3D geometric shapes for login screen split view."
+    },
+    {
+      "category": "profile_photo",
+      "url": "https://images.unsplash.com/photo-1651684215020-f7a5b6610f23?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzc4MTQzMjg0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional smiling headshot for header profile."
+    },
+    {
+      "category": "learning_material_thumbnail",
+      "url": "https://static.prod-images.emergentagent.com/jobs/65494c6f-7277-4134-a328-1f949e850228/images/247f244bc93b2e69e61186e1394e1356c6a3aad80a5518032d73db0ea9338a0f.png",
+      "description": "3D isometric abstract composition for courses/learning materials."
+    },
+    {
+      "category": "corporate_training_placeholder",
+      "url": "https://images.unsplash.com/photo-1758691736067-b309ee3ef7b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjB0cmFpbmluZyUyMG1lZXRpbmd8ZW58MHx8fHwxNzc4MTQzMjg0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Corporate meeting placeholder."
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Install Google Fonts for 'Outfit' and 'Manrope'.",
+    "Set up Tailwind CSS configuration with the defined color palette and typography.",
+    "Implement the Layout component with a sticky header and a dark sidebar (collapsible on mobile).",
+    "Use Shadcn UI components extensively (Card, Button, Badge, Input, Form, Avatar, DropdownMenu).",
+    "Do not use generic 'Inter' font. Apply the provided font families.",
+    "Ensure 'data-testid' is added to all interactive elements for testing purposes.",
+    "Create a clean Split-Screen login page with the provided generated image as the left background.",
+    "For the Dashboard grid, utilize the 'Control Room' grid pattern with tight gaps (gap-6) and use col-span/row-span effectively to prevent jagged edges."
+  ]
+}
+

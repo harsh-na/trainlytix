@@ -1,0 +1,12 @@
+export { default as TrainerDashboard } from "./TrainerDashboard";
+export { default as MyBatches } from "./MyBatches";
+export { default as SessionPlanning } from "./SessionPlanning";
+export { default as SessionDelivery } from "./SessionDelivery";
+export { default as Attendance } from "./Attendance";
+export { default as Assessments } from "./Assessments";
+export { default as LearningContent } from "./LearningContent";
+export { default as Performance } from "./Performance";
+export { default as Feedback } from "./Feedback";
+export { default as Availability } from "./Availability";
+export { default as Reports } from "./Reports";
+export { default as Profile } from "./Profile";
